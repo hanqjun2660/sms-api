@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
@@ -25,6 +26,7 @@ public class SmsController {
     }
 
     @PostMapping("/sms/send")
+    @ResponseBody
     public SmsResponseDTO sendSms(@RequestBody MessageDTO messageDTO) throws UnsupportedEncodingException, NoSuchAlgorithmException, URISyntaxException, JsonProcessingException, InvalidKeyException {
         SmsResponseDTO response = smsService.sendSms(messageDTO);
         return response;
