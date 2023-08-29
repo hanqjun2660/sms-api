@@ -18,10 +18,10 @@ api 가이드 : https://api.ncloud-docs.com/docs/ai-application-service-sens
 
 ## 실행 가이드
 ```
-method : post<br>
-url : /sms/send<br>
-header : application/json<br>
-body : {<br>
-            "to" : "01012345678"<br>
-        }<br>
+method : post
+url : /sms/send
+header : application/json
+body : {
+            "to" : "01012345678"
+        }
 ```
