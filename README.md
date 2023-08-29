@@ -1,5 +1,6 @@
 # Naver Cloud PlatForm SMS API
 > SMS API를 이용하여 SMS를 발송해보자
+api 가이드 : https://api.ncloud-docs.com/docs/ai-application-service-sens
 
 ## 사용 기술
 <img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=Springboot&logoColor=white"></br>
@@ -16,10 +17,11 @@
 개인적인 학습용도로 사용하는 Repository입니다.
 
 ## 실행 가이드
-
-method : post
-url : /sms/send
-header : application/json
-body : {
-            "to" : "01012345678"
-        }
+```
+method : post<br>
+url : /sms/send<br>
+header : application/json<br>
+body : {<br>
+            "to" : "01012345678"<br>
+        }<br>
+```
