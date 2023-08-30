@@ -20,7 +20,7 @@ api 가이드 : https://api.ncloud-docs.com/docs/ai-application-service-sens
 ```
 method : post
 url : /sms/send
-header : application/json
+contentType : application/json
 body : {
             "to" : "01012345678"
         }
